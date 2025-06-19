@@ -1,0 +1,4 @@
+Bug: ReferenceError: undefinedVariable is not defined
+Cause: Tried to log a variable that doesn't exist
+Fix: Removed the console.log(undefinedVariable)
+Tool Used: console.log & nodemon restarts

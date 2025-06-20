@@ -1,8 +1,15 @@
 import React from 'react'
+import FromShow from './FromShow'
 
-const FromList = () => {
+const FromList = ({froms}) => {
+
+const renderedFroms = froms.map((from) => {
+return <FromShow key = {from.id} from ={from}/>
+})
+
+
   return (
-    <div>FromList</div>
+    <div className='book-list'>{renderedFroms}</div>
   )
 }
 

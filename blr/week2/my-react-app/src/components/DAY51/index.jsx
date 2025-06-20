@@ -2,6 +2,7 @@ import{useState} from 'react';
 import React from 'react'
 import FromCreate from './FromCreate';
 import FromShow from './FromShow';
+import FromList from './FromList';
 
 
 const index = () => {
@@ -15,9 +16,10 @@ setFrom([...from,name]);
 }
 
  return (
-    <div>
+    <div className='app'>
       <FromCreate onCreate = {CreateFrom}/>
       <FromShow display ={from}/>
+      <FromList from = {from} />
     </div>
   )
 }

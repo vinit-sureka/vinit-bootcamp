@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Day5SearchBar from "./Day5SearchBar";
 import Day5Image from "./Day5Image";
-import searchImages from '../../api'
+import searchImages from '../../api';
 
 
 export default function Day5() {

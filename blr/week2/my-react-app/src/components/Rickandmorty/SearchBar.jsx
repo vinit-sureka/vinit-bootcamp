@@ -32,13 +32,13 @@ const SearchBar = ({ onSearch }) => {
 
   return (
     <div style={searchBarStyle}>
-      <label>Please enter a character to view images!</label>
+      <label>Please enter a character name!</label>
       <br /><br />
       <input
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        placeholder="Search character"
+        placeholder="name of character"
         style={inputStyle}
       />
       <br /><br />

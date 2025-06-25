@@ -18,9 +18,9 @@ function App() {
       
       {/* <div><DAY6/></div> */}
 
-      {/* <div><Rickandmorty/></div> */}
+      <div><Rickandmorty/></div>
 
-      <div><TaskApp/></div>
+      {/* <div><TaskApp/></div> */}
 
     </>
   );

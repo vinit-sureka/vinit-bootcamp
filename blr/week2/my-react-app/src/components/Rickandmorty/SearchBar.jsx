@@ -1,39 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Button from "./Button";
 
 const SearchBar = ({ onSearch }) => {
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
 
   const handleClick = () => {
     onSearch(input);
   };
 
-  // Style the container
   const searchBarStyle = {
-    textAlign: 'center',
-    marginBottom: '30px',
+    textAlign: "center",
+    marginBottom: "30px",
   };
 
   const inputStyle = {
-    padding: '10px',
-    width: '250px',
-    borderRadius: '6px',
-    border: '1px solid #ccc',
+    padding: "10px",
+    width: "250px",
+    borderRadius: "6px",
+    border: "1px solid #ccc",
   };
 
-  const buttonStyle = {
-    marginTop: '10px',
-    padding: '10px 20px',
-    backgroundColor: '#2196f3',
-    color: 'white',
-    border: 'none',
-    borderRadius: '6px',
-    cursor: 'pointer',
+  const buttonGroupStyle = {
+    display: "flex",
+    justifyContent: "center",
+    gap: "20px", // spacing between buttons
+    marginTop: "15px",
   };
 
   return (
     <div style={searchBarStyle}>
       <label>Please enter a character name!</label>
-      <br /><br />
+      <br />
+      <br />
       <input
         type="text"
         value={input}
@@ -41,8 +39,11 @@ const SearchBar = ({ onSearch }) => {
         placeholder="name of character"
         style={inputStyle}
       />
-      <br /><br />
-      <button onClick={handleClick} style={buttonStyle}>Search</button>
+      <div style={buttonGroupStyle}>
+        <Button text="Back" type="danger" />
+        <Button text="Search" type="search" onClick={handleClick} />
+        <Button text="Next" type="success" />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,27 @@
+.btn{
+    height: 5vh;
+    width: 8vw;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 50px;
+}
+
+.search{
+    background-color: aqua;
+    color: black;
+}
+
+.view{
+
+    color: blue;
+}
+
+.danger{
+   background-color: red;
+    color: black;
+}
+
+.success{
+   background-color: green;
+    color: black;
+}

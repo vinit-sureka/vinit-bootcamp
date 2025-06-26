@@ -11,22 +11,22 @@ const ButtonPage = () => {
 
   return (
 <div>
- {/* <div>me={}
-    <Button success rounded outline className ="mb-5" onClick ={handelClick} classNA><GoBell/>click me</Button>
- </div> */}
+ <div>
+    <Button success rounded outline className ="mb-5" onClick ={handelClick} ><GoBell/>click me</Button>
+ </div> 
  <div >
     <Button success onMouseEnter = {handelClick}>
         <GoCloudDownload/>a</Button>
  </div>
- {/* <div  >
-    <Button warning> <GoDatabase/>b</Button>
+ <div >
+    <Button warning > <GoDatabase/>b</Button>
  </div>
  <div>
     <Button secondary outline>c</Button>
  </div>
  <div>
     <Button primary>d</Button>
- </div> */}
+ </div> 
  </div>
   )
 }

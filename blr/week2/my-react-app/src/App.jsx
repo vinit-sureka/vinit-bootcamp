@@ -7,6 +7,8 @@ import Rickandmorty from "./components/Rickandmorty"
 import TASKMANAGER from "./components/TASKMANAGER"
 import TaskManager from "./components/TASKMANAGER/components/TaskManager";
 import TaskApp from "./components/TASKMANAGER";
+import COMPS from "./components/COMPS";
+
 
 function App() {
   return (
@@ -18,9 +20,11 @@ function App() {
       
       {/* <div><DAY6/></div> */}
 
-      <div><Rickandmorty/></div>
+      {/* <div><Rickandmorty/></div> */}
 
       {/* <div><TaskApp/></div> */}
+
+      <div><COMPS/></div>
 
     </>
   );
